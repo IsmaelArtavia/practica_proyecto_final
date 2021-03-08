@@ -9,25 +9,31 @@ export const Demo = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
-		<div className="container">
-			<ul className="list-group">
+		<div className="container ">
+			<div className="ripple-background">
+				<div className="circle xxlarge shade1" />
+				<div className="circle xlarge shade2" />
+				<div className="circle large shade3" />
+				<div className="circle mediun shade4" />
+				<div className="circle small shade5" />
+			</div>
+
+			<ul className="list-group ">
 				{store.demo.map((item, index) => {
 					return (
 						<li
 							key={index}
-							className="list-group-item d-flex justify-content-between"
+							className="list-group-item d-flex justify-content-between list"
 							style={{ background: item.background }}>
 							<Link to={"/single/" + index}>
-								<span>Link to: {item.title}</span>
+								<span>{item.title}</span>
 							</Link>
 							{// Conditional render example
 							// Check to see if the background is orange, if so, display the message
-							item.background === "orange" ? (
-								<p style={{ color: item.initial }}>
-									Check store/flux.js scroll to the actions to see the code
-								</p>
-							) : null}
-							<button className="btn btn-success" onClick={() => actions.changeColor(index, "orange")}>
+							item.background === "orange" ? <p style={{ color: item.initial }} /> : null}
+							<button
+								className="btn btn-success btn1"
+								onClick={() => actions.changeColor(index, "orange")}>
 								Change Color
 							</button>
 						</li>
