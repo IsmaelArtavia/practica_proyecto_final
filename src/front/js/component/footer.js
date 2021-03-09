@@ -8,7 +8,20 @@ export const Footer = () => (
 		<p>
 			Made with <i className="fa fa-heart text-danger" /> by{" "}
 			<a href="http://www.4geeksacademy.com">4Geeks Academy</a>
-			<p className="mt-5 mb-3 text-muted">sponsored by</p>
+			<br />
+			<p> Colaboradores</p>
+			<a href="https://github.com/leisyarcia">LeisyArcia, </a>
+			<a href="https://github.com/diego-sepulveda-lavin"> diego-sepulveda-lavin, </a>
+			<a href="https://github.com/tommygonzaleza"> tommygonzaleza, </a>
+			<a href="https://github.com/djoker07"> djoker07, </a>
+			<a href="https://github.com/alejojimenez"> alejojimenez, </a>
+			<a href="https://github.com/mojonapower"> mojonapower, </a>
+			<a href="https://github.com/rosinni"> Rosinni Rodríguez, </a>
+			<a href="https://github.com/pbullor"> pbullor, </a>
+			<a href="https://github.com/ajoseerazo"> ajoseerazo </a>
+			<p className="mt-5 mb-3 text-muted ">
+				<p>sponsored by</p>
+			</p>
 			<img id="image" src={micittImageUrl} />
 			<img id="image2" src={catImageUrl} />
 		</p>
